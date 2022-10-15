@@ -1,0 +1,10 @@
+2022-10-15 16:29:35 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication on LAPTOP-S45BDKLO with PID 33356 (C:\Users\dougl\Learning\CS\Spring Boot\Udemy\EventDrivenMicroservicesSpringBootKafkaElastic\microservices-demo\twitter-to-kafka-service\target\classes started by dougl in C:\Users\dougl\Learning\CS\Spring Boot\Udemy\EventDrivenMicroservicesSpringBootKafkaElastic\microservices-demo)
+2022-10-15 16:29:35 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2022-10-15 16:29:35 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.03 seconds (JVM running for 1.6)
+2022-10-15 16:29:35 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
+2022-10-15 16:29:35 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Kafka, Elasticsearch]
+2022-10-15 16:29:35 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello microservices!
+2022-10-15 16:29:35 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Kafka, Elasticsearch]
+2022-10-15 16:29:35 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text dolor elit magna posuere libero posuere massa Elasticsearch pulvinar amet libero porttitor amet
+2022-10-15 16:29:45 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text sit sit congue Kafka amet pulvinar
+2022-10-15 16:29:55 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text posuere elit congue pulvinar magna Kafka porttitor magna elit
