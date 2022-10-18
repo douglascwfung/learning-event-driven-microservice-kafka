@@ -5,6 +5,9 @@ spring:
     config:
       server:
         git:
-          uri: C:\Users\dougl\Learning\CS\Spring Boot\Udemy\EventDrivenMicroservicesSpringBootKafkaElastic\microservices-demo\config-server-repository
+          uri: https://github.com/douglascwfung/spring-cloud-config-server-repo.git
+          default-label: main
+          username: douglascwfung
+          password: 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
           clone-on-start: true
     fail-fast: true
