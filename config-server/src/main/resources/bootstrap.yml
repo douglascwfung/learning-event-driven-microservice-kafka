@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: configserver
+  cloud:
+    config:
+      server:
+        git:
+          uri: C:\Users\dougl\Learning\CS\Spring Boot\Udemy\EventDrivenMicroservicesSpringBootKafkaElastic\microservices-demo\config-server-repository
+          clone-on-start: true
+    fail-fast: true
