@@ -11,3 +11,7 @@ spring:
           password: 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
           clone-on-start: true
     fail-fast: true
+  security:
+    user:
+      name: spring_cloud_user
+      password: springCloud_Pwd!
