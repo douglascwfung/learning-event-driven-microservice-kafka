@@ -8,10 +8,10 @@ spring:
           uri: https://github.com/douglascwfung/spring-cloud-config-server-repo.git
           default-label: main
           username: douglascwfung
-          password: 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
+          password: '{cipher}7a584945e249380481dfd7bc01571198a5958cdb7ee243b4b376647372577cafc6ef8201a7a3211299c62c413759b0748b9864072aa48a1573349802cb66a1e3'
           clone-on-start: true
     fail-fast: true
   security:
     user:
       name: spring_cloud_user
-      password: springCloud_Pwd!
+      password: '{cipher}900aea62b1fb91d6935c3ab7b7c76c49f22621d1a4a5c0017d72f8f6b492aba4d260743136ed42e614028fb7b7e7702a'
