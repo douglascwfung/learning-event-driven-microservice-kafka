@@ -1940,3 +1940,390 @@ Using generated security password: 84bc0767-bc9d-40fc-b741-179a312b04da
 2022-10-23 15:15:33 [twitterTopicListener-1-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-twitterTopicListener-2, groupId=twitterTopicListener] Cluster ID: sF8KKsD3Sz-2IfVSPG_VlQ
 2022-10-23 15:15:34 [main] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port(s): 8182
 2022-10-23 15:15:34 [main] INFO  c.m.d.k.t.e.s.KafkaToElasticServiceApplication - Started KafkaToElasticServiceApplication in 7.577 seconds (JVM running for 8.272)
+2022-10-23 17:49:45 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
+2022-10-23 17:49:46 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=kafka-to-elastic-service,config-client, profiles=[kafka_to_elastic], label=null, version=dd4a553db93b681123f3ede76cd8093fc5e2f15d, state=null
+2022-10-23 17:49:46 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/douglascwfung/spring-cloud-config-server-repo.git/config-client-kafka_to_elastic.yml'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/douglascwfung/spring-cloud-config-server-repo.git/config-client.yml'}]
+2022-10-23 17:49:46 [main] INFO  c.m.d.k.t.e.s.KafkaToElasticServiceApplication - The following profiles are active: kafka_to_elastic
+2022-10-23 17:49:47 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=6a32cbd9-0ef1-383a-9123-f798526eb3d2
+2022-10-23 17:49:47 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$50bec454] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-23 17:49:47 [main] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	client.dns.lookup = default
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2022-10-23 17:49:48 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.1
+2022-10-23 17:49:48 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 0efa8fb0f4c73d92
+2022-10-23 17:49:48 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1666518588034
+2022-10-23 17:49:48 [main] INFO  o.s.b.a.s.r.ReactiveUserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 92a972fd-6ea4-4baa-90e2-ed29bb2e70a2
+
+2022-10-23 17:49:50 [main] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port(s): 8182
+2022-10-23 17:49:51 [main] INFO  c.m.d.k.t.e.s.KafkaToElasticServiceApplication - Started KafkaToElasticServiceApplication in 7.44 seconds (JVM running for 8.25)
+2022-10-23 17:49:51 [main] INFO  c.m.d.k.a.client.KafkaAdminClient - Reading kafka topic [twitter-topic], attempt 0
+2022-10-23 17:49:51 [main] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Topics with name twitter-topic is ready for operations!
+2022-10-23 17:49:51 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = twitterTopicListener
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.LongDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class io.confluent.kafka.serializers.KafkaAvroDeserializer
+
+2022-10-23 17:49:51 [main] INFO  i.c.k.s.KafkaAvroDeserializerConfig - KafkaAvroDeserializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	specific.avro.reader = true
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	use.latest.version = false
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2022-10-23 17:49:51 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.1
+2022-10-23 17:49:51 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 0efa8fb0f4c73d92
+2022-10-23 17:49:51 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1666518591233
+2022-10-23 17:49:51 [main] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-twitterTopicListener-1, groupId=twitterTopicListener] Subscribed to topic(s): twitter-topic
+2022-10-23 17:49:51 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService
+2022-10-23 17:49:51 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = twitterTopicListener
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.LongDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class io.confluent.kafka.serializers.KafkaAvroDeserializer
+
+2022-10-23 17:49:51 [main] INFO  i.c.k.s.KafkaAvroDeserializerConfig - KafkaAvroDeserializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	specific.avro.reader = true
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	use.latest.version = false
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2022-10-23 17:49:51 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.1
+2022-10-23 17:49:51 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 0efa8fb0f4c73d92
+2022-10-23 17:49:51 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1666518591257
+2022-10-23 17:49:51 [main] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-twitterTopicListener-2, groupId=twitterTopicListener] Subscribed to topic(s): twitter-topic
+2022-10-23 17:49:51 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService
+2022-10-23 17:49:51 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = twitterTopicListener
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.LongDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class io.confluent.kafka.serializers.KafkaAvroDeserializer
+
+2022-10-23 17:49:51 [main] INFO  i.c.k.s.KafkaAvroDeserializerConfig - KafkaAvroDeserializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	specific.avro.reader = true
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	use.latest.version = false
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2022-10-23 17:49:51 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.1
+2022-10-23 17:49:51 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 0efa8fb0f4c73d92
+2022-10-23 17:49:51 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1666518591270
+2022-10-23 17:49:51 [main] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-twitterTopicListener-3, groupId=twitterTopicListener] Subscribed to topic(s): twitter-topic
+2022-10-23 17:49:51 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService
+2022-10-23 17:49:51 [twitterTopicListener-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-twitterTopicListener-1, groupId=twitterTopicListener] Cluster ID: sF8KKsD3Sz-2IfVSPG_VlQ
+2022-10-23 17:49:51 [twitterTopicListener-1-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-twitterTopicListener-2, groupId=twitterTopicListener] Cluster ID: sF8KKsD3Sz-2IfVSPG_VlQ
+2022-10-23 17:49:51 [twitterTopicListener-2-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-twitterTopicListener-3, groupId=twitterTopicListener] Cluster ID: sF8KKsD3Sz-2IfVSPG_VlQ
+2022-10-23 17:49:52 [twitterTopicListener-2-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-twitterTopicListener-3, groupId=twitterTopicListener] Discovered group coordinator localhost:19092 (id: 2147483646 rack: null)
+2022-10-23 17:49:52 [twitterTopicListener-2-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-twitterTopicListener-3, groupId=twitterTopicListener] (Re-)joining group
+2022-10-23 17:49:52 [twitterTopicListener-0-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-twitterTopicListener-1, groupId=twitterTopicListener] Discovered group coordinator localhost:19092 (id: 2147483646 rack: null)
+2022-10-23 17:49:52 [twitterTopicListener-0-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-twitterTopicListener-1, groupId=twitterTopicListener] (Re-)joining group
+2022-10-23 17:49:52 [twitterTopicListener-1-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-twitterTopicListener-2, groupId=twitterTopicListener] Discovered group coordinator localhost:19092 (id: 2147483646 rack: null)
+2022-10-23 17:49:52 [twitterTopicListener-1-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-twitterTopicListener-2, groupId=twitterTopicListener] (Re-)joining group
+2022-10-23 17:49:58 [twitterTopicListener-2-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitterTopicListener-3, groupId=twitterTopicListener] Finished assignment for group at generation 1: {consumer-twitterTopicListener-1-86350928-4651-4762-9ae3-7d2646c31474=Assignment(partitions=[twitter-topic-0]), consumer-twitterTopicListener-3-2736f311-3efb-4442-bcfb-a308d8828e48=Assignment(partitions=[twitter-topic-2]), consumer-twitterTopicListener-2-e4b53555-6de2-4eaa-997e-2b3265f36474=Assignment(partitions=[twitter-topic-1])}
+2022-10-23 17:49:58 [twitterTopicListener-2-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-twitterTopicListener-3, groupId=twitterTopicListener] Successfully joined group with generation 1
+2022-10-23 17:49:58 [twitterTopicListener-0-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-twitterTopicListener-1, groupId=twitterTopicListener] Successfully joined group with generation 1
+2022-10-23 17:49:58 [twitterTopicListener-1-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-twitterTopicListener-2, groupId=twitterTopicListener] Successfully joined group with generation 1
+2022-10-23 17:49:58 [twitterTopicListener-1-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitterTopicListener-2, groupId=twitterTopicListener] Adding newly assigned partitions: twitter-topic-1
+2022-10-23 17:49:58 [twitterTopicListener-2-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitterTopicListener-3, groupId=twitterTopicListener] Adding newly assigned partitions: twitter-topic-2
+2022-10-23 17:49:58 [twitterTopicListener-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitterTopicListener-1, groupId=twitterTopicListener] Adding newly assigned partitions: twitter-topic-0
+2022-10-23 17:49:58 [twitterTopicListener-2-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitterTopicListener-3, groupId=twitterTopicListener] Found no committed offset for partition twitter-topic-2
+2022-10-23 17:49:58 [twitterTopicListener-1-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitterTopicListener-2, groupId=twitterTopicListener] Found no committed offset for partition twitter-topic-1
+2022-10-23 17:49:58 [twitterTopicListener-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitterTopicListener-1, groupId=twitterTopicListener] Found no committed offset for partition twitter-topic-0
+2022-10-23 17:49:58 [twitterTopicListener-2-C-1] INFO  o.a.k.c.c.i.SubscriptionState - [Consumer clientId=consumer-twitterTopicListener-3, groupId=twitterTopicListener] Resetting offset for partition twitter-topic-2 to offset 0.
+2022-10-23 17:49:58 [twitterTopicListener-2-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - twitterTopicListener: partitions assigned: [twitter-topic-2]
+2022-10-23 17:49:58 [twitterTopicListener-0-C-1] INFO  o.a.k.c.c.i.SubscriptionState - [Consumer clientId=consumer-twitterTopicListener-1, groupId=twitterTopicListener] Resetting offset for partition twitter-topic-0 to offset 0.
+2022-10-23 17:49:58 [twitterTopicListener-1-C-1] INFO  o.a.k.c.c.i.SubscriptionState - [Consumer clientId=consumer-twitterTopicListener-2, groupId=twitterTopicListener] Resetting offset for partition twitter-topic-1 to offset 0.
+2022-10-23 17:49:58 [twitterTopicListener-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - twitterTopicListener: partitions assigned: [twitter-topic-0]
+2022-10-23 17:49:58 [twitterTopicListener-1-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - twitterTopicListener: partitions assigned: [twitter-topic-1]
+2022-10-23 17:49:58 [twitterTopicListener-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 223 number of message received with keys [3830390112546861976, 1632136407658956583, 496256679370037315, 1280517499542432284, 9143387899294093143, 1778984020295780237, 8685898708848899756, 3877101391396726061, 503317775995632098, 644669734383033814, 2270728623380531611, 9031785863095860754, 8642959817426006830, 1501900291956639774, 7922711542453488157, 9096318355325338449, 3268059184728317403, 4247003330234236516, 6088833024576066959, 123891440067123690, 1371635880755497276, 830911433734720912, 5896118508544926790, 2841294498411103210, 1798420250687975010, 3543423033084293074, 8472379078264008014, 6045469343429108244, 6730739710714431244, 1636693145039524451, 8365181773666928373, 6676257438093479420, 2254964612271435401, 2327140812129037768, 1333900913250387145, 2128007135094732726, 1533691767339732483, 5169635846102776066, 6225928464385389519, 925559330554121226, 2270321269257776781, 1706140208986600433, 2291452162297146372, 2580200084266821520, 1919058390241022766, 1326285128270818502, 4707427361522738740, 4926224512349052175, 5592441885215224493, 7364043880107074589, 3849028821357460514, 841737020014243984, 2876767215008196177, 5532963098443748182, 4531597524083753125, 2200617303065191678, 3380410669558760891, 2139492982471205216, 2014368875316723828, 3518112616434616890, 1779528176430383981, 3096349339069429061, 4634907582965233842, 1161762433179025162, 53496098860031644, 6670082914768777594, 5418881987069548110, 2226112850295550473, 26523491015167125, 2965339094467674639, 5177366892789031587, 8379841757379890092, 980561845342842660, 7327455681314607267, 7875000324027851391, 6217551211158451748, 1916192625606414582, 2534853741281491272, 7601974502640575418, 5793812581642318928, 1115111546891688360, 8073837990798581022, 4285896999105129095, 5693125880782562120, 3946928923800290752, 4508305670645160327, 2171650709295739648, 1234063262866042913, 5280064159678419757, 2353091994066148014, 6569505118284794321, 5050629462169938555, 5645413081827261226, 2150584653335927645, 8878328981916127424, 5924610544413888279, 5464493310322861730, 5694348898251487258, 4891896362653442458, 8857660874322841015, 8511552316203825856, 7917684021577320238, 260686752414194587, 5949796946814486990, 7113166593983013416, 6174010853217179806, 2267128920646524332, 1341737750506212949, 6710039265077192108, 538482919851851507, 25881711692627796, 4269934581085258663, 5197908983011040358, 6397362653460926496, 8596518454411967023, 536480708790855332, 4719478281505091477, 668332273482816968, 3663760189368726893, 1990905195152840743, 5483992728704120240, 1711149909366903716, 2974705924672995324, 7294663729664668386, 1706843770864551032, 882881604228069602, 8630180199459306167, 5617227397145049022, 6262892104444999035, 8051926281827940231, 6190292587595269854, 4891204222988826121, 3898780967097089207, 7690676288130781991, 2611383301501936307, 1813993628174036778, 2361943405238507909, 9217761146894911957, 8375958424400033027, 7978912013055298838, 1352337527813775713, 4794980521044304513, 5563939384111543206, 4653978745163331256, 6940335854176209153, 7534441574556768021, 7375033823599902008, 4310247170924944845, 1884650421196495141, 2409682409189098905, 6037928321688328136, 8544783449183813039, 399361593708750545, 3059776841013822828, 3884200560243851909, 7647370004606717633, 736708635170683547, 5500853767406827494, 7804973184392745973, 598446244485510530, 2255421495109451048, 5937840692788377566, 1106002244074771630, 925264777358368852, 2881749719909531875, 7608523649556616096, 8370497306727869602, 2068010002795703469, 5277657523687589024, 4400345315942176719, 1407789775078982255, 3616737194450393565, 1857352362058305, 5540421221240423317, 486974041496500542, 2445300411196446086, 5573432490309217351, 6481793245500728411, 3781898738112417347, 2695023241560723693, 5514763981112515522, 6847050990329811607, 6307339445690223276, 3964487529786980690, 770660462443609846, 6104358028283616056, 5332125531971766621, 1697364227128242234, 3490273017916819853, 4810030568158071507, 6102070550782717459, 6623078618694030687, 5527579793282170865, 2368827201630655029, 8603335222220114409, 3668349814332652102, 6536369357341614817, 5347879507076260919, 1006831007164373949, 5655850590573564309, 5683068051582504548, 1479034425162063740, 1158095231221125168, 8224655212754693159, 4282609207279576786, 4901802086288580376, 416939072844305522, 6949158497230596233, 1858951003801235931, 2880561964517341814, 7124024364572113679, 1453242434476575492, 5570513231245762100, 56142528675386012, 2715406599641677841, 8529552639149561037, 5906088479818372272, 6958072635832928954, 4929887552081349392, 4177523269315671225, 7259773183325071910, 2097404216002032735, 4169562610052684798], partitions [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] and offsets [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222], sending it to elastic: Thread id 35
+2022-10-23 17:49:58 [twitterTopicListener-2-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 225 number of message received with keys [7797228883782131466, 7573918174148365777, 5764115172806526135, 2941823055802587068, 6909729492938880112, 3499149847812864641, 8121113189125489556, 971979670833100549, 1227111541700540270, 2448106642312334499, 7538118010216769086, 1856245747415848413, 5119692459409100231, 6961422586830741440, 9137212088917681516, 2025843207076665450, 4919817959285870673, 708223305513620879, 4571074076558376137, 5522230048396626445, 7402568335264374104, 8406769590646172051, 6311324469902837600, 185196750954891270, 1058487108146388748, 3819252308788549033, 6599499761594430403, 2051564706851111433, 6446841437006774936, 8872566839757203090, 5578325348836454619, 6308618048353239339, 5112011623882202744, 3705058097547007754, 7158802803592452671, 5554426353546615922, 3232827619322849659, 6792148989569174372, 4096519149529073580, 8125170866842897015, 3219056391447648827, 5239563570872627683, 196841729728345856, 6519117205440931065, 5357688847859715473, 8527414531358614259, 4971121239876870271, 1125542354599272198, 2098208645317607187, 7846215446350763253, 7067572051686725224, 2174141203277762603, 3120123532865490375, 2923794265626022020, 8849802684086611968, 2315054768041090412, 8341346931507195713, 3817010003854534354, 3934167880009608107, 5884539033026607405, 8750337217702853380, 7607609054197273792, 6001284102877452246, 5167158730652056482, 7930211368069873975, 8139645363754655665, 6397165398941768779, 7731161533890725351, 4923194490955387147, 4907521647029014051, 4765896161036782988, 2736257402475309887, 5053633374850255295, 6312984660341799134, 1811787294342204792, 4001157455708401800, 856053818988266060, 1670395315098569921, 8753060226531286670, 5448732149154156323, 870330874195229419, 5546845439385150383, 3478823604761395769, 2924919514772822372, 2959371691431088134, 5728851673608248206, 1367769613508485401, 4061478753872049356, 6725288846648470520, 2598615195492848422, 9057771368307527224, 2860575157527196706, 4064754257239431718, 7559390606548630695, 6918536175220463336, 253462176422717434, 2421617779033575956, 768646317445247553, 8793032306103817284, 5324054559329261606, 3657479972970200041, 4758411570650776830, 5968404355000013149, 2576395579674971987, 5002831572130302891, 5915768159499606126, 2446681270768281414, 8520325396340097982, 7416079338573292438, 586691538321577203, 198508096777400612, 4162253380749993565, 7680945614918812811, 3474500388263478671, 6287439229996875977, 4234046164056813753, 6777457616732006280, 6593221086094526030, 5939774820971101414, 1350016918296817149, 9139019430812237312, 6094926517167248396, 6298682784353693925, 2029944741103981607, 4737047268754408741, 1136105861957381350, 6501271251155658700, 5855103632653172543, 2071505134693442928, 2262231777468782800, 4336926882535743426, 7400477990462723852, 2733385776017740429, 7399628077204116775, 247934840480431401, 1088383745119129022, 7748776659302961550, 2358835415633023669, 8739919975011002386, 8546130422291890445, 7574358550931589426, 5156607896471398730, 637007450331749353, 5494776757439046717, 6992622060986111914, 616308313287425569, 1651035077818687459, 4550290363446185122, 4853009879209110651, 4939661428546265633, 3223946682625418917, 5729982058632753954, 7195543252521951166, 5970805710812993363, 3557941088173609170, 4024319177816033495, 852631586178447809, 673893507226761082, 623095387556284319, 1945077827719844475, 4413763665808875595, 4526928618647967487, 5839891326455141747, 2070124979673991226, 4721753233564283618, 2354830388150505698, 7622495175219410553, 5387829857049380320, 4281368661801990108, 3084523469542817545, 5377499075776533863, 5862519805909908591, 5702690158337312178, 1569965915749131594, 2864681863484610483, 4711909155792283040, 3926542880086514534, 8169913365392855501, 1416793627075189860, 4269769195069983493, 4360465492276941719, 8217092453641504678, 5101532319077717689, 4157380936633820879, 6833491065476662838, 47670745789548110, 6858233245562467765, 46110348165015887, 7932702025026884853, 4386088681391627177, 8713880756795480179, 5871807944875302205, 2151570606407560884, 7028123696882841313, 2452546692535783190, 8536645773105700137, 7118140065693988875, 1499414822401705776, 7750051373143881644, 1930717214757326693, 7555668027916978190, 5782652429494601537, 2632546500956793026, 5533527800415594889, 8223746000340469647, 2595621120252778095, 1561392342574541942, 6683497398447070780, 6642106212118258741, 9016133335122051969, 5406038983155362655, 4318020193683863622, 3196685434960611763, 921502202414882359, 4273881087418761663, 2170923653127176206, 1891176967677928592, 7943780640508889435, 6342197924690955, 2358968798956458456, 3141415682310134959, 7646700599388662010, 6799105818630111575, 1791774316770537246, 2185489793468400134], partitions [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2] and offsets [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224], sending it to elastic: Thread id 39
+2022-10-23 17:49:58 [twitterTopicListener-1-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 240 number of message received with keys [8062823150655102328, 6926451656616403970, 8530457495189516220, 3918784176763142476, 8188615550478667474, 1498638698224620486, 1609510992619619146, 2042923796524487575, 2576831339632089355, 1257281897699148680, 4451800946665856494, 3294807278204577545, 4461062505258519128, 4018748619085938837, 7022539998871565852, 3918808601164078785, 5542368400250561991, 1072674559021174021, 6398576932398906273, 2972747498617938652, 580179985432458340, 457185638025805098, 5291064849674731015, 4685103676521999819, 4885591744036530947, 4396826469023549014, 6993975276582677646, 4109976721155298313, 3416143329982943440, 2085146421937073455, 3607863125587216056, 8220562663380191816, 1292171312332009179, 2679417746691525215, 3697842989847162297, 7605930587111270321, 4855551365352005072, 3176872134107966942, 5399172934042833320, 4460768026744636222, 5451204352693942046, 724222653357489011, 5365876907411702553, 7904177337979926955, 3884693749772251966, 6073626073918955081, 5577022600962621110, 5926538780670433744, 287528305042352313, 7492960331960817885, 2645605754045616754, 2161037839109051270, 2981354440404596862, 7151089920342051442, 2565187570580319725, 6465137227246953650, 682615277118641526, 7407702429734613619, 8519775334562147765, 7710381718461209607, 1792121110152135934, 6456753251903634372, 717255629844202137, 3248767330386053245, 3676813205356684276, 6891939465924221550, 8593507743374660400, 4108238814519565397, 7211067164572023895, 882156306380545788, 4689612316073836052, 7647039368429406363, 5115926549042863189, 8367944000484888477, 3592521907321839871, 3340366882092248196, 8426453246774171016, 9149396583822022829, 5357398573694281445, 6081607847752489864, 3690710125602095827, 3177166328958246840, 5236800448096731618, 600928206841915585, 4377684777563169120, 9155979171829649437, 4282883154817297875, 5918677572977568574, 5864971365074737548, 7772727898986414242, 7823696750273070808, 3610957632035007794, 5795006528389785160, 7516666986965641513, 3810776491736805463, 4840679957835810190, 5060509421517976006, 373440380036198377, 3687276181940067999, 2490101979168880958, 3706552538526281360, 5454412674304859435, 9021807582952909230, 4126509352674221536, 727373416177696650, 7392687932419405485, 2030262044720094753, 7105310495723665076, 5813140231231063148, 6968868957587579264, 2091851096882037181, 2530724735210472005, 5057678489854179428, 1471686854744967850, 1880933710908063128, 6385562617329972689, 6923517946538867750, 3726597807404665754, 8832431752171066759, 6923343780783479918, 2729131321125859734, 4229342700280286490, 305130855058164289, 5884859799328502694, 2742224810776353702, 3811423610839224845, 5220485010107331041, 7269319188371521379, 5052850904288210592, 8135456882384324731, 9025557728795447002, 62313927957666054, 6640832449008749199, 8800432704658306731, 8125639000421260271, 8757180604005498295, 3563906844924912176, 7361573994935631038, 4372291365755634598, 2177349949167981509, 4561164772859260309, 8645868856418430405, 2051599759372136583, 675456610692450128, 5782532294109564387, 7686326698478437043, 4981142716787774323, 6390594995626908209, 4516343576284282397, 1628832460826768700, 8635880400579629819, 6706687890747479297, 1291579540101758707, 7942495000059710155, 6106032984402549488, 1757376596268449636, 8326544322774928742, 8119946533291067683, 988789081058803207, 2950265690657657035, 4970028556364261381, 5857445563241119007, 336323980737584410, 3670873741065333677, 1118999143368579636, 3590818071498144774, 5524049796262532434, 1921559134516693921, 8390061946041781720, 8632417655458392308, 99908844800055973, 178467120279835091, 1227275105689379386, 1642688748183774907, 1971608883056914325, 5350899797500883237, 5787727153638172401, 4758717613289585518, 5098753006852929234, 1397276358552907357, 4842416662103443447, 1520433534670520897, 7280252436967778184, 2979219188962803730, 2092030990855941866, 4143301342812417074, 182117777521236673, 5003942977337210986, 3093421271399885392, 8829358655589522894, 2735239352006020364, 5484329407252363914, 8536145208862723372, 736767544702604644, 8220272076341635700, 1723723953678928972, 6937985094160958406, 3805239190451610501, 1862887161478713195, 6598692585553494851, 7406883398478720048, 4035882996942546819, 279014450954094979, 8372412691947799343, 1598357702011117677, 6261507143231452924, 6219171960856623745, 6817903153087412691, 6169342992912577490, 347387781757987749, 6688281618788338669, 361845683575247921, 5989130679793055917, 2980555464606152007, 7107136984911594628, 4631730181560555806, 5260030409990983708, 7572224529405663360, 138200264822854863, 6907962555525135515, 7342424332325284252, 5900416051372223626, 5776035512264706756, 3144481590843598066, 7715596267062121098, 2495251534110364631, 5747496857690219356, 2683131800236535555, 6596446867115249126, 6760508616112543354, 8433563263482127621, 87997773160161275, 1196618487757289149, 6363485059067064685, 4029778630137586363, 4063650152858801272, 6624957947830515138, 1712200869494050477, 418443166545662189, 6416050995841025290], partitions [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] and offsets [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239], sending it to elastic: Thread id 37
+2022-10-23 17:49:58 [twitterTopicListener-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [5614360879309384417], partitions [0] and offsets [223], sending it to elastic: Thread id 35
+2022-10-23 17:50:08 [twitterTopicListener-1-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1466406662225047329], partitions [1] and offsets [240], sending it to elastic: Thread id 37
+2022-10-23 17:50:18 [twitterTopicListener-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [2830452225797783973], partitions [0] and offsets [224], sending it to elastic: Thread id 35
+2022-10-23 17:50:28 [twitterTopicListener-1-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [2241766429330249944], partitions [1] and offsets [241], sending it to elastic: Thread id 37
+2022-10-23 17:50:38 [twitterTopicListener-2-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [7500891434802980006], partitions [2] and offsets [225], sending it to elastic: Thread id 39
+2022-10-23 17:50:48 [twitterTopicListener-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [7753673989921092609], partitions [0] and offsets [225], sending it to elastic: Thread id 35
+2022-10-23 17:50:58 [twitterTopicListener-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [592894849852576457], partitions [0] and offsets [226], sending it to elastic: Thread id 35
+2022-10-23 17:51:08 [twitterTopicListener-1-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [5404567346620607546], partitions [1] and offsets [242], sending it to elastic: Thread id 37
+2022-10-23 17:51:18 [twitterTopicListener-1-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [8910241340155092931], partitions [1] and offsets [243], sending it to elastic: Thread id 37
+2022-10-23 17:51:28 [twitterTopicListener-2-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [4510172121304350997], partitions [2] and offsets [226], sending it to elastic: Thread id 39
