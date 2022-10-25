@@ -46,3 +46,7 @@
 2022-10-25 10:23:39 [http-nio-8888-exec-1] WARN  o.a.c.util.SessionIdGeneratorBase - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [188] milliseconds.
 2022-10-25 10:23:40 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/C:/Users/dougl/AppData/Local/Temp/config-repo-9436765033994585062/config-client-elastic_query.yml
 2022-10-25 10:23:40 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/C:/Users/dougl/AppData/Local/Temp/config-repo-9436765033994585062/config-client.yml
+2022-10-25 14:06:07 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/C:/Users/dougl/AppData/Local/Temp/config-repo-9436765033994585062/config-client-elastic_query.yml
+2022-10-25 14:06:07 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/C:/Users/dougl/AppData/Local/Temp/config-repo-9436765033994585062/config-client.yml
+2022-10-25 14:24:44 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/C:/Users/dougl/AppData/Local/Temp/config-repo-9436765033994585062/config-client-elastic_query.yml
+2022-10-25 14:24:44 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/C:/Users/dougl/AppData/Local/Temp/config-repo-9436765033994585062/config-client.yml
