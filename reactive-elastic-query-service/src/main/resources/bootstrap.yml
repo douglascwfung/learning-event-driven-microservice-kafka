@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: reactive-elastic-query-service
+  profiles:
+    active: reactive_elastic_query
+  cloud:
+    config:
+      name: reactive-elastic-query-service,config-client
+      uri: http://localhost:8888
+      username: spring_cloud_user
+      password: '{cipher}72de773bc12f90ee48c8a2c367861c02775176a3ebd21987c5e45280d4abb760e00986014958be6956216b0214062008'

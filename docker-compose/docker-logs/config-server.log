@@ -2562,3 +2562,4 @@ Caused by: java.net.SocketTimeoutException: connect timed out
 2022-10-26 02:37:34 [http-nio-8888-exec-8] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-9466572599456048144/config-client.yml
 2022-10-26 02:37:44 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-9466572599456048144/config-client-twitter_to_kafka.yml
 2022-10-26 02:37:44 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-9466572599456048144/config-client.yml
+2022-10-26 07:00:41 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
