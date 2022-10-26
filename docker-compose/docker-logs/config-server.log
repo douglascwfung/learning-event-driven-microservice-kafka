@@ -2531,3 +2531,34 @@ Caused by: java.net.SocketTimeoutException: connect timed out
 2022-10-26 02:11:55 [http-nio-8888-exec-2] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-14940222119016973034/config-client-elastic_query_web.yml
 2022-10-26 02:11:55 [http-nio-8888-exec-2] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-14940222119016973034/config-client.yml
 2022-10-26 02:24:11 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-10-26 02:35:57 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2022-10-26 02:35:59 [main] INFO  c.m.demo.config.server.ConfigServer - No active profile set, falling back to default profiles: default
+2022-10-26 02:36:02 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=2a519873-3bf9-3410-9240-bed5bf7485b8
+2022-10-26 02:36:03 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2022-10-26 02:36:03 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2022-10-26 02:36:03 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-10-26 02:36:04 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2022-10-26 02:36:04 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-10-26 02:36:04 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5183 ms
+2022-10-26 02:36:06 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-10-26 02:36:14 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/actuator/**'], []
+2022-10-26 02:36:14 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/encrypt/**'], []
+2022-10-26 02:36:14 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/decrypt/**'], []
+2022-10-26 02:36:15 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3be46d9c, org.springframework.security.web.context.SecurityContextPersistenceFilter@4331be30, org.springframework.security.web.header.HeaderWriterFilter@6c9151c1, org.springframework.security.web.csrf.CsrfFilter@4cadd4d4, org.springframework.security.web.authentication.logout.LogoutFilter@13aa54f1, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@41404aa2, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@65d23aa3, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@41d877bb, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4746fb8c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3dad535f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@48f4f03e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@39c5a105, org.springframework.security.web.session.SessionManagementFilter@41f40dfa, org.springframework.security.web.access.ExceptionTranslationFilter@2299f6d7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7210f559]
+2022-10-26 02:36:15 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-10-26 02:36:15 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2022-10-26 02:36:15 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2022-10-26 02:36:15 [main] INFO  c.m.demo.config.server.ConfigServer - Started ConfigServer in 19.701 seconds (JVM running for 21.023)
+2022-10-26 02:36:29 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-26 02:36:29 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-10-26 02:36:29 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 17 ms
+2022-10-26 02:36:35 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-9466572599456048144/config-client-elastic_query.yml
+2022-10-26 02:36:35 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-9466572599456048144/config-client.yml
+2022-10-26 02:36:36 [http-nio-8888-exec-4] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-9466572599456048144/config-client-elastic_query_web.yml
+2022-10-26 02:36:36 [http-nio-8888-exec-4] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-9466572599456048144/config-client.yml
+2022-10-26 02:37:11 [http-nio-8888-exec-6] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-9466572599456048144/config-client-elastic_query.yml
+2022-10-26 02:37:11 [http-nio-8888-exec-6] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-9466572599456048144/config-client.yml
+2022-10-26 02:37:34 [http-nio-8888-exec-8] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-9466572599456048144/config-client-kafka_to_elastic.yml
+2022-10-26 02:37:34 [http-nio-8888-exec-8] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-9466572599456048144/config-client.yml
+2022-10-26 02:37:44 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-9466572599456048144/config-client-twitter_to_kafka.yml
+2022-10-26 02:37:44 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-9466572599456048144/config-client.yml
